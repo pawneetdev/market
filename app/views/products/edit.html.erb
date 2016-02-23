@@ -1,0 +1,17 @@
+<h1>Edit Product</h1>
+
+<%= form_for :product, url: product_path(@product), method: :patch do |f| %>
+	<p>
+		<%= f.label :name %><br>
+		<%= f.text_field :name %>
+	</p>
+
+	<p>
+		<%= f.label :price %><br>
+		<%= f.text_field :price %>
+	</p>
+	
+	<p>
+		<%= f.submit "Edit Product" %>
+	</p>
+<% end %>

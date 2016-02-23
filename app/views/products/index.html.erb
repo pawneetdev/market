@@ -1,0 +1,8 @@
+<h1>Products</h1>
+<% @products.each do |product| %>
+	<p>
+		<b><%= product.name %></b><br>
+		Price: Rs.<%= product.price  %> |
+		<%=  link_to "Edit", edit_product_path(product) %>
+	</p>
+<% end %>
